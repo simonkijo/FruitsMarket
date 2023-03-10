@@ -8,7 +8,7 @@ module com.simonkijo.fruitsmarket {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
+    //requires eu.hansolo.tilesfx;
 
     opens com.simonkijo.fruitsmarket to javafx.fxml;
     exports com.simonkijo.fruitsmarket;
