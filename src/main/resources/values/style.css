@@ -15,3 +15,15 @@
 .shadow{
     -fx-effect:dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
 }
+.chosen-fruit-card{
+    -fx-background-color:#f16c31;
+    -fx-background-radius:30;
+}
+.comboBox{
+    -fx-background-color:rgba(255,255,255,0.3);
+    -fx-background-radius:30;
+}
+.add-btn{
+    -fx-background-color:#ffffff;
+    -fx-background-radius:100;
+}

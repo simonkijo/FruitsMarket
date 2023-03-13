@@ -3,15 +3,20 @@
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="14.0" layoutY="-6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -34,7 +39,7 @@
                         </Label>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="150.0" stylesheets="@../../../values/style.css">
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="267.0" stylesheets="@../../../values/style.css">
                      <VBox.margin>
                         <Insets left="30.0" right="30.0" />
                      </VBox.margin>
@@ -54,12 +59,75 @@
                         <String fx:value="shadow" />
                      </styleClass>
                   </HBox>
-                  <VBox prefHeight="535.0" prefWidth="100.0">
+                  <Pane prefHeight="24.0" prefWidth="335.0" VBox.vgrow="ALWAYS" />
+                  <VBox alignment="CENTER" prefHeight="385.0" prefWidth="235.0" styleClass="chosen-fruit-card" stylesheets="@../../../values/style.css">
                      <VBox.margin>
-                        <Insets left="50.0" right="50.0" />
+                        <Insets bottom="20.0" left="50.0" right="50.0" />
                      </VBox.margin>
                      <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="235.0">
+                           <children>
+                              <Label prefHeight="44.0" prefWidth="114.0" text="Peach" textFill="#f8f3f3">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="\$2.99" textFill="#f5f2f2">
+                                 <font>
+                                    <Font name="Cambria" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin></HBox>
+                        <ImageView fitHeight="127.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/peach.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="235.0">
+                           <children>
+                              <Label prefHeight="44.0" prefWidth="69.0" text="kg" textFill="#f8f3f3">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="25.0" prefWidth="91.0" promptText="1" styleClass="comboBox" stylesheets="@../../../values/style.css" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="235.0">
+                           <children>
+                              <Separator prefHeight="12.0" prefWidth="82.0" />
+                              <Label prefHeight="42.0" prefWidth="38.0" text="OR" textFill="#f8f3f3">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="106.0" layoutY="25.0" prefHeight="12.0" prefWidth="72.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="314.0" prefHeight="31.0" prefWidth="235.0">
+                           <children>
+                              <Label prefHeight="44.0" prefWidth="69.0" text="kg" textFill="#f8f3f3">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="25.0" prefWidth="91.0" promptText="selected" styleClass="comboBox" stylesheets="@../../../values/style.css" />
+                           </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" styleClass="add-btn" stylesheets="@../../../values/style.css" text="ADD TO CART" textFill="#828282">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Button>
                      </children>
                   </VBox>
                </children>
